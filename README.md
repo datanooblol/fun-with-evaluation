@@ -23,6 +23,9 @@ python classification/example.py
 # Regression metrics
 python regression/example.py
 
+# Forecasting metrics
+python forecasting/example.py
+
 # Deep learning evaluation
 python deep_learning/example.py
 
@@ -45,6 +48,7 @@ python utils/cross_validation.py
 fun-with-evaluation/
 ├── classification/          # Classification metrics (Accuracy, F1, ROC-AUC, etc.)
 ├── regression/             # Regression metrics (MSE, RMSE, R², etc.)
+├── forecasting/            # Time series metrics (MASE, SMAPE, Tracking Signal, etc.)
 ├── deep_learning/          # Training dynamics & overfitting detection
 ├── computer_vision/        # IoU, mAP, Dice, PSNR, etc.
 ├── nlp/                    # BLEU, ROUGE, Perplexity, etc.
@@ -65,30 +69,37 @@ fun-with-evaluation/
 - R² (Coefficient of Determination)
 - MAPE (Mean Absolute Percentage Error)
 
-### 3. Deep Learning Evaluation
+### 3. Forecasting Metrics
+- MASE (Mean Absolute Scaled Error)
+- SMAPE (Symmetric MAPE)
+- Forecast Bias & Tracking Signal
+- Directional Accuracy
+- Prediction Intervals & Coverage
+
+### 4. Deep Learning Evaluation
 - Training & validation loss curves
 - Overfitting & underfitting detection
 - Learning rate analysis
 - Convergence monitoring
 
-### 4. Computer Vision
+### 5. Computer Vision
 - **Object Detection**: IoU, mAP
 - **Segmentation**: Dice coefficient, Pixel accuracy, mIoU
 - **Image Quality**: PSNR, SSIM
 
-### 5. NLP Metrics
+### 6. NLP Metrics
 - **Translation**: BLEU, METEOR
 - **Summarization**: ROUGE
 - **Language Models**: Perplexity
 - **Embeddings**: Cosine similarity
 
-### 6. Model Performance
+### 7. Model Performance
 - Inference latency & throughput
 - Memory usage & model size
 - FLOPs count
 - Optimization techniques
 
-### 7. Evaluation Utilities
+### 8. Evaluation Utilities
 - K-Fold & Stratified cross-validation
 - Statistical significance testing
 - Bias-variance tradeoff
